@@ -23,7 +23,14 @@ Python 3.10 is used at that project!
 1. **Create and activate a virtual environment:**
    ```bash
 	python3.10 -m venv myvenv
+	```
+	```bash
 	venv\Scripts\activate
+	```
+	```bash
 	pip install PyQt6 scikit-learn numpy pandas matplotlib tensorflow
+	```
+	```bash
 	py.exe 21067011.py
+	```
 
