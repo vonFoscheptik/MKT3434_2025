@@ -1,46 +1,29 @@
-# ⚙️ MKT3434_2025
+# Enhanced ML Course GUI
+#21067011 Furkan Karstarlı
+## Overview
+This application is a graphical user interface for training various machine learning models. It supports regression, classification, SVM, and Naive Bayes on multiple datasets with configurable loss functions and hyperparameters.
+Python 3.10 is used at that project!
 
-**MKT3434 Course of Dept. Mechatronics Eng. at YTU instructed by Ertugrul Bayraktar**
+## Features
+- **Data Management:** Load built-in datasets (e.g., Iris, Breast Cancer, Boston Housing) or custom CSV files.  
+- **Missing Data Handling:** Options include mean, median, most frequent, or constant imputation.  
+- **Training Options:** Choose loss functions (MSE, MAE, Huber, Cross-Entropy, Hinge) and set regularization parameters.  
+- **Model Tabs:** Separate configuration tabs for Regression, Classification, SVM, and Naive Bayes.  
+- **Visualization:** Displays results via scatter plots (regression) or confusion matrices (classification) with performance metrics.
 
----
+## Requirements
+- Python 3.10+
+- PyQt6
+- scikit-learn
+- numpy, pandas
+- matplotlib
+- TensorFlow
 
-## 🚀 Overview
+## Installation
+1. **Create and activate a virtual environment:**
+   ```bash
+	python3.10 -m venv myvenv
+	venv\Scripts\activate
+	pip install PyQt6 scikit-learn numpy pandas matplotlib tensorflow
+	py.exe 21067011.py
 
-This repository provides a base GUI framework for students to develop and integrate machine learning methods. The GUI is built using PyQt6 and supports various classical machine learning and deep learning techniques. Students will extend this GUI by adding necessary functionalities over time.
-
----
-
-## 📚 Long-Term Homework Instructions
-
-Students are required to modify and enhance this GUI incrementally every three weeks. The objective is to build a fully functional and improved machine learning GUI.
-
-### 🎯 Key Requirements:
-
-*   **Insert Necessary Methods:** Integrate missing machine learning methods within the provided GUI framework.
-*   **Enhance the GUI:** The default interface is provided, but students are encouraged to improve usability and design.
-*   **Ensure Data and Method Appropriateness:** The datasets and algorithms should be compatible within the GUI structure.
-*   **Implement Training and Testing Processes:** Correctly implement model training and evaluation workflows.
-*   **Regular Submissions:** Submit updates every three weeks through Google Classroom for this course.
-
----
-
-## 🤝 Repository and Collaboration
-
-Students should fork this repository and develop their versions.
-
-Regular commits and documentation updates are expected.
-
----
-
-## 🏁 Getting Started
-
-### ⚙️ Prerequisites:
-
-Ensure you have the following installed:
-
-*   Python 3.8+
-
-### 📦 Required dependencies:
-
-```bash
-pip install numpy pandas matplotlib PyQt6 scikit-learn tensorflow torch torchvision torchaudio opencv-python opencv-contrib-python scipy fastai kornia
