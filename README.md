@@ -23,7 +23,7 @@ Python 3.10 is used at that project!
 1. **Create and activate a virtual environment:**
    First of all you should be in your project directory at terminal.
    Or simply you can open terminal at your Visual Code app after opening the project folder.
-   Then type that commands respectively... 
+   Then type these commands respectively... 
    ```bash
 	python3.10 -m venv myvenv
 	```
