@@ -11,6 +11,17 @@ It provides a flexible environment for experimenting with supervised learning, c
 
 ---
 
+## 🔍 What’s Inside?
+A single GUI that lets you:
+
+* **Load, clean & split data** – built-ins *and* your own CSVs.  
+* **Train classic ML models** – regression, classification, SVM, Bayes.  
+* **Explore data** – PCA, t-SNE, UMAP, K-Means with elbow plots.  
+* **Design & fit neural networks** – drag-and-drop layers, optimisers, LR schedules, live metrics, fine-tune ImageNet back-bones, quick DCGAN demo.  
+* **Visualise results** – matplotlib canvas **+** real-time log console.
+
+---
+
 ## Features
 
 - ### 📊 Data Management
@@ -52,18 +63,30 @@ It provides a flexible environment for experimenting with supervised learning, c
 - ### 🧠 Eigen Decomposition
   - Computes eigenvectors from a predefined covariance matrix
 
+## ✨ New in v6
+
+| Area | Additions |
+|------|-----------|
+| **Neural Networks (tab #6)** | • Dynamic layer list (Dense, Conv2D, MaxPool, LSTM, GRU, Dropout)<br>• Built-in datasets **MNIST / CIFAR-10 / IMDB** (1-click)<br>• Optimisers **Adam / SGD / RMSprop**<br>• LR schedules **Step** & **Exponential Decay**<br>• Regularisation: **Dropout** & **L2**<br>• Live training curves + QTextBrowser log<br>• **Gradient histogram** after fit |
+| **Transfer-Learning** | Load **VGG16 / ResNet50 / MobileNetV2**, auto-resizes greyscale input, frozen backbone + trainable head, optional fine-tune (low LR). |
+| **Model I/O** | Save ⇢ `.keras` *(or legacy `.h5`)*, Load ⇠ existing model. |
+| **GAN demo** | “DCGAN Demo” button (placeholder trainer – ready to extend). |
+
+
 ---
 
-## Requirements
-- Python 3.10+
-- PyQt6
-- scikit-learn
-- numpy, pandas
-- matplotlib
-- TensorFlow
-- Pandas
-- Plotly
-- Umap-learn
+## 📦 Requirements
+
+| Package | Tested Version |
+|---------|---------------|
+| Python | 3.10.x |
+| PyQt6 | ≥ 6.5 |
+| NumPy / Pandas | ≥ 1.26 / 2.2 |
+| Matplotlib | ≥ 3.8 |
+| scikit-learn | ≥ 1.5 |
+| TensorFlow | ≥ 2.16 |
+| Plotly *(optional)* | ≥ 5.20 |
+| umap-learn | ≥ 0.5 |
 
 ## Installation
 1. **Create and activate a virtual environment:**
@@ -77,7 +100,7 @@ It provides a flexible environment for experimenting with supervised learning, c
 	.\venv\Scripts\activate  # Windows
 	```
 	```bash
-	pip install pyqt6 numpy pandas matplotlib scikit-learn plotly umap-learn tensorflow
+	pip install pyqt6 numpy pandas matplotlib scikit-learn tensorflow plotly umap-learn
 	```
 	```bash
 	py.exe 21067011.py
